@@ -1,0 +1,7 @@
+- name: Check server reachability
+  hosts: pibm_server
+  gather_facts: false
+  remote_user: ubuntu
+  tasks:
+    - name: Ping the server
+      ping:
